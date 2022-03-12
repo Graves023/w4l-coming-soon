@@ -123,3 +123,16 @@
 .main-bar-wraper.is-fixed .custom-logo-white{
 	display:none;
 }
+
+.logo-header__title {
+    font-size: 32px!important;
+    color: #fff !important;
+}
+
+.logo-header__title.logo-header__title--menu {
+    color: #000 !important;
+    display: block;
+    text-align: center;
+    border: 2px solid #000;
+    border-radius: 7px;
+}

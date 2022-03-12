@@ -17,9 +17,14 @@
     
 */
 
-@import "./abstract/abstract";
-@import "./../vendor/bootstrap/scss/bootstrap.scss";
-@import "./base/base";
-@import "./components/components";
-@import "./pages/pages";
-@import "./layout/layout";
+@import './abstract/abstract';
+@import './../vendor/bootstrap/scss/bootstrap.scss';
+@import './base/base';
+@import './components/components';
+@import './pages/pages';
+@import './layout/layout';
+
+.logo-header__title {
+  font-size: 32px;
+  color: $white;
+}
