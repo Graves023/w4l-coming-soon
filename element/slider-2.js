@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import moment from 'moment';
+import IntlMessages from '../src/i18n/IntlMessages';
 
 function Slider2() {
   const [days, setDays] = useState(0);
@@ -53,7 +54,7 @@ function Slider2() {
                     animationName: "fadeInUp",
                   }}
                 >
-                  World4life — це незалежна волонтерська платформа взаємодопомоги.
+                  <IntlMessages id={'main.header.title'} />
                 </h1>
                 <p
                   className="wow fadeInUp m-b30"

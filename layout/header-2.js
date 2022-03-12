@@ -1,6 +1,10 @@
 import Link from 'next/link';
 import { useState } from 'react';
+import useLocales from '../src/hooks/useLocales';
+
 function Header2() {
+    
+    const { handleLanguageSwitch } = useLocales();
     const [show, setShow] = useState(false);
     const [open, setOpen] = useState("home");
     return (
@@ -18,6 +22,20 @@ function Header2() {
                                     <li>
                                         <i className="la la-phone-volume"></i> +91
                                         987-654-3210
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="dlab-topbar-left">
+                                <ul>
+                                    <li style={{ color: 'white'}} >
+                                        <Link href={'/en'} locale="en">
+                                            <a style={{ color: 'white'}} onClick={() => handleLanguageSwitch('en')}>English</a>
+                                        </Link>
+                                    </li>
+                                    <li >
+                                        <Link href={'/ua'} locale="ua">
+                                            <a style={{ color: 'white'}} onClick={() => handleLanguageSwitch('ua')}>Українська</a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </div>

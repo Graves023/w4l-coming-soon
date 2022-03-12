@@ -18,4 +18,4 @@ function Pricing2() {
     )
   }
   
-  export default Pricing2;
+export default Pricing2;
