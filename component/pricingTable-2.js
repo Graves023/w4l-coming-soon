@@ -38,14 +38,6 @@ function PricingTable2() {
                     $5<small className="pricingtable-type"></small>
                   </h2>
                 </div>
-                <ul className="pricingtable-features">
-                  <li>Graphic Design </li>
-                  <li>Web Design</li>
-                  <li>UI/UX</li>
-                  <li>HTML/CSS</li>
-                  <li>SEO Marketing</li>
-                  <li>Business Analysis</li>
-                </ul>
                 <div className="pricingtable-footer">
                   <a
                     href="/pricing-table-2"
@@ -84,14 +76,6 @@ function PricingTable2() {
                 <div className="pricingtable-price">
                   <h2 className="pricingtable-bx">$10</h2>
                 </div>
-                <ul className="pricingtable-features">
-                  <li>Graphic Design </li>
-                  <li>Web Design</li>
-                  <li>UI/UX</li>
-                  <li>HTML/CSS</li>
-                  <li>SEO Marketing</li>
-                  <li>Business Analysis</li>
-                </ul>
                 <div className="pricingtable-footer">
                   <a
                     href="/pricing-table-2"
@@ -130,14 +114,6 @@ function PricingTable2() {
                 <div className="pricingtable-price">
                   <h2 className="pricingtable-bx">$15</h2>
                 </div>
-                <ul className="pricingtable-features">
-                  <li>Graphic Design </li>
-                  <li>Web Design</li>
-                  <li>UI/UX</li>
-                  <li>HTML/CSS</li>
-                  <li>SEO Marketing</li>
-                  <li>Business Analysis</li>
-                </ul>
                 <div className="pricingtable-footer">
                   <a
                     href="/pricing-table-2"

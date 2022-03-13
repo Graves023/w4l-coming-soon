@@ -12,7 +12,7 @@ function Clients2() {
         <div className="container">
           <div className="clients-carousel owl-none owl-carousel m-b30">
             {/* <IntlMessages id={'sidebar.calendar.selectable'} /> */}
-            <ClientSlider />
+            {/* <ClientSlider /> */}
           </div>
         </div>
       </div>

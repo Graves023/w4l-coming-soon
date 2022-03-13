@@ -15,16 +15,6 @@ function Header2() {
             <div className="row d-flex justify-content-between align-items-center">
               <div className="dlab-topbar-left">
                 <ul>
-                  <li>
-                    <i className="la la-envelope"></i> info@example.com
-                  </li>
-                  <li>
-                    <i className="la la-phone-volume"></i> +91 987-654-3210
-                  </li>
-                </ul>
-              </div>
-              <div className="dlab-topbar-left">
-                <ul>
                   <li style={{color: 'white'}}>
                     <Link href={'/en'} locale="en">
                       <a
@@ -51,20 +41,16 @@ function Header2() {
                 <ul className="dlab-social-icon">
                   <li>
                     <a
-                      className="fa fa-facebook"
-                      href="https://en-gb.facebook.com/"
-                    ></a>
-                  </li>
-                  <li>
-                    <a
                       className="fa fa-instagram"
-                      href="https://www.instagram.com/"
+                      target="_blank"
+                      href="https://www.instagram.com/dkkasumov"
                     ></a>
                   </li>
                   <li>
                     <a
-                      className="fa fa-twitter"
-                      href="https://twitter.com/login?lang=en"
+                      className="fa fa-telegram"
+                      target="_blank"
+                      href="https://t.me/anders_graves"
                     ></a>
                   </li>
                 </ul>
@@ -94,15 +80,6 @@ function Header2() {
                 <span></span>
               </button>
               {/* <!-- Extra Nav --> */}
-              <div className="extra-nav">
-                <div className="extra-cell">
-                  <Link href="contact-us-2">
-                    <a className="btn btn-primary rounded-xl gradient shadow">
-                      <IntlMessages id={'main.header.contact'} />
-                    </a>
-                  </Link>
-                </div>
-              </div>
               <div
                 className={`header-nav navbar-collapse collapse justify-content-end ${
                   show ? 'show' : ''
@@ -116,21 +93,47 @@ function Header2() {
                     </a>
                   </Link>
                 </div>
+                <ul style={{display: show ? 'block' : 'none'}}>
+                  <li style={{'text-align': 'center'}}>
+                    <Link href={'/en'} locale="en">
+                      <a
+                        style={{color: 'black'}}
+                        onClick={() => handleLanguageSwitch('en')}
+                      >
+                        English
+                      </a>
+                    </Link>
+                  </li>
+                  <li style={{'text-align': 'center'}}>
+                    <Link href={'/ua'} locale="ua">
+                      <a
+                        style={{color: 'black'}}
+                        onClick={() => handleLanguageSwitch('ua')}
+                      >
+                        Українська
+                      </a>
+                    </Link>
+                  </li>
+                </ul>
 
                 <div className="dlab-social-icon">
                   <ul>
-                    <Link href="https://en-gb.facebook.com/">
-                      <a className="fa fa-facebook"></a>
-                    </Link>
-                    <Link href="https://twitter.com/login?lang=en">
-                      <a className="fa fa-twitter"></a>
-                    </Link>
-                    <Link href="https://www.linkedin.com/login">
-                      <a className="fa fa-linkedin"></a>
-                    </Link>
-                    <Link href="https://www.instagram.com/">
-                      <a className="fa fa-instagram"></a>
-                    </Link>
+                    <ul>
+                      <li>
+                        <a
+                          className="fa fa-instagram"
+                          target="_blank"
+                          href="https://www.instagram.com/dkkasumov"
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          className="fa fa-telegram"
+                          target="_blank"
+                          href="https://t.me/anders_graves"
+                        ></a>
+                      </li>
+                    </ul>
                   </ul>
                 </div>
               </div>
