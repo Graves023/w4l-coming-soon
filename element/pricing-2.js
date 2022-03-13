@@ -1,21 +1,35 @@
 import PricingTable2 from "../component/pricingTable-2";
 import Toggle from "../component/pricingToggle";
+import IntlMessages from "../src/i18n/IntlMessages";
+
 function Pricing2() {
-    return (
-      <>
-        {/* <!-- Our Pricing --> */}
-		<section className="content-inner-2" style={{"backgroundImage":"url(images/background/bg16.png)","backgroundSize":"cover","backgroundPosition":"top center","backgroundRepeat":"no-repeat"}}>
-			<div className="container">
-				<div className="section-head style-3 text-center">
-					<h6 className="sub-title bgl-primary m-b15 text-primary">ДОПОМОГА ПРОЕКТУ</h6>
-					<h2 className="title">Нам потрібна будь-яка допомога</h2>
-				</div>
-				
-                <PricingTable2/>
-			</div>
-		</section>
-      </>
-    )
-  }
-  
+  return (
+    <>
+      {/* <!-- Our Pricing --> */}
+      <section
+        className="content-inner-2"
+        style={{
+          backgroundImage: "url(images/background/bg16.png)",
+          backgroundSize: "cover",
+          backgroundPosition: "top center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div className="container">
+          <div className="section-head style-3 text-center">
+            <h6 className="sub-title bgl-primary m-b15 text-primary">
+              <IntlMessages id={"donate"} />
+            </h6>
+            <h2 className="title">
+              <IntlMessages id={"donate.subtitle"} />
+            </h2>
+          </div>
+
+          <PricingTable2 />
+        </div>
+      </section>
+    </>
+  );
+}
+
 export default Pricing2;

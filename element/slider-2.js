@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
-import moment from 'moment';
-import IntlMessages from '../src/i18n/IntlMessages';
+import { useEffect, useState } from "react";
+import moment from "moment";
+import IntlMessages from "../src/i18n/IntlMessages";
 
 function Slider2() {
   const [days, setDays] = useState(0);
@@ -8,19 +8,19 @@ function Slider2() {
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
   const [showSemicolon, setShowSemicolon] = useState(false);
-  
+
   useEffect(() => {
     setInterval(() => {
       const now = moment();
-      const then = moment('2022-03-27 12:12:12', 'YYYY-MM-DD hh:mm:ss');
+      const then = moment("2022-03-27 12:12:12", "YYYY-MM-DD hh:mm:ss");
       const countdown = moment(then - now);
-      setDays(countdown.format('D'));
-      setHours(countdown.format('HH'));
-      setMinutes(countdown.format('mm'));
-      setSeconds(countdown.format('ss'));
+      setDays(countdown.format("D"));
+      setHours(countdown.format("HH"));
+      setMinutes(countdown.format("mm"));
+      setSeconds(countdown.format("ss"));
     }, 1000);
   }, []);
-  
+
   return (
     // <!-- Slider -->
     <div className="banner-two gradient">
@@ -43,7 +43,7 @@ function Slider2() {
                     animationName: "fadeInUp",
                   }}
                 >
-                  Про нас
+                  <IntlMessages id={"about"} />
                 </h6>
                 <h1
                   className="wow fadeInUp m-b20"
@@ -54,7 +54,7 @@ function Slider2() {
                     animationName: "fadeInUp",
                   }}
                 >
-                  <IntlMessages id={'main.header.title'} />
+                  <IntlMessages id={"about.title"} />
                 </h1>
                 <p
                   className="wow fadeInUp m-b30"
@@ -65,20 +65,32 @@ function Slider2() {
                     animationName: "fadeInUp",
                   }}
                 >
-                  Кожен із нас може опинитися в скрутній ситуації. Ми не можемо цього передбачити, але ми ніколи не опиняємось сам на сам із труднощами. Тому що кожен із нас — людина з великим серцем, що може допомогти добрим словом, дією, професійними знаннями, або поділитися тим, що має в достатку.
+                  <IntlMessages id={"about.desc"} />
                 </p>
                 <div className="countdown">
-                  <div className="date"><span className="time days">{days}</span>
-                    <span>дн.</span>
+                  <div className="date">
+                    <span className="time days">{days}</span>
+                    <span>
+                      <IntlMessages id={"day"} />
+                    </span>
                   </div>
-                  <div className="date"><span className="time hours">{hours}</span>
-                    <span>год.</span>
+                  <div className="date">
+                    <span className="time hours">{hours}</span>
+                    <span>
+                      <IntlMessages id={"hour"} />
+                    </span>
                   </div>
-                  <div className="date"><span className="time mins">{minutes}</span>
-                    <span>хв.</span>
+                  <div className="date">
+                    <span className="time mins">{minutes}</span>
+                    <span>
+                      <IntlMessages id={"minute"} />
+                    </span>
                   </div>
-                  <div className="date"><span className="time secs">{seconds}</span>
-                    <span>сек.</span>
+                  <div className="date">
+                    <span className="time secs">{seconds}</span>
+                    <span>
+                      <IntlMessages id={"second"} />
+                    </span>
                   </div>
                 </div>
               </div>
