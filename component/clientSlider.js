@@ -1,6 +1,7 @@
 import Slider from "react-slick";
 
 function ClientSlider() {
+	
     const settings = {
         dots: false,
         infinite: true,
