@@ -122,7 +122,7 @@
 }
 .main-bar-wraper.is-fixed .custom-logo-white{
 	display:none;
-}
+}   
 
 .logo-header__title {
     transition: .2s color ease-in;
@@ -141,4 +141,8 @@
     text-align: center;
     border: 2px solid #000;
     border-radius: 7px;
+}
+
+.lang-active {
+    color: gold!important;
 }

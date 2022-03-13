@@ -2,11 +2,13 @@ import Link from 'next/link'
 import {useState} from 'react'
 import useLocales from '../src/hooks/useLocales'
 import IntlMessages from '../src/i18n/IntlMessages'
+import Router from 'next/router'
 
 function Header2() {
-  const {handleLanguageSwitch} = useLocales()
+  const {handleLanguageSwitch, route} = useLocales()
   const [show, setShow] = useState(false)
   const [open, setOpen] = useState('home')
+
   return (
     <>
       <header className="site-header mo-left header-transparent">
@@ -20,6 +22,7 @@ function Header2() {
                       <a
                         style={{color: 'white'}}
                         onClick={() => handleLanguageSwitch('en')}
+                        className={route === 'en' ? 'lang-active' : false}
                       >
                         English
                       </a>
@@ -30,6 +33,7 @@ function Header2() {
                       <a
                         style={{color: 'white'}}
                         onClick={() => handleLanguageSwitch('ua')}
+                        className={route === 'ua' ? 'lang-active' : false}
                       >
                         Українська
                       </a>
@@ -99,6 +103,7 @@ function Header2() {
                       <a
                         style={{color: 'black'}}
                         onClick={() => handleLanguageSwitch('en')}
+                        className={route === 'en' ? 'lang-active' : false}
                       >
                         English
                       </a>
@@ -109,6 +114,7 @@ function Header2() {
                       <a
                         style={{color: 'black'}}
                         onClick={() => handleLanguageSwitch('ua')}
+                        className={route === 'ua' ? 'lang-active' : false}
                       >
                         Українська
                       </a>
