@@ -144,6 +144,79 @@ function Header2() {
                     </Link>
                   </ul>
                 </div>
+                <div className="extra-nav">
+                  <div className="extra-cell">
+                    <Link href="contact-us-2">
+                      <a className="btn btn-primary rounded-xl gradient shadow">
+                        Зв'язатися з нами
+                      </a>
+                    </Link>
+                  </div>
+                  <style>
+                    {`
+                    .header-nav .extra-nav {
+                        display: none ;
+                        margin-bottom: auto;
+                    }
+                    @media screen and (max-width: 575px) {
+                    .header-nav .extra-nav {
+                        float: none;
+                        display: flex ;
+                        justify-content: center ;
+                        margin-left: 0;
+                    }
+                    `}
+                  </style>
+                </div>
+
+                <div className="contact-details">
+                  <ul>
+                    <li>
+                      <i className="la la-envelope"></i>{" "}
+                      <a href="mailto:">info@example.com</a>
+                    </li>
+                    <li>
+                      <i className="la la-phone-volume"></i>
+                      <a href="tel:+919876543210">+91 987-654-3210</a>
+                    </li>
+
+                    <style>
+                      {`.contact-details{
+                          display: none;
+                          justify-content: center;                
+                      }
+                      @media screen and (max-width: 991px) {
+                        .contact-details{
+                        display: flex;
+                      }
+                      }
+                      
+                      .contact-details li{
+                        display: flex;
+                        align-items: center
+                      }
+                    
+                      .contact-details li:not(:last-child){
+                        margin-bottom: 10px;
+                      }
+                      .contact-details i{
+                          font-size: 30px;
+                          color:#F6797A;
+                          margin-right: 8px;
+                      }
+                      
+                      .contact-details a {
+                        color:#F6797A;
+                        transition: color ease-in-out 0.1s;
+                      }
+
+                      .contact-details a:hover{
+                      color:#CC4655;
+                      }
+                    `}
+                    </style>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
